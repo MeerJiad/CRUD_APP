@@ -1,16 +1,4 @@
-# untitled8
+CRUD_APP
+A simple Flutter CRUD (Create, Read, Update, Delete) app to manage products, featuring a product list, product creation, editing, and deletion functionality.
+This project demonstrates working with REST APIs, Flutter forms, state management, and navigation.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
