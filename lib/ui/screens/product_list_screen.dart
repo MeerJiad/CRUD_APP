@@ -58,7 +58,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     );
   }
 
-  Future<void> _getProductList() async {
+  Future<void> _getProductList() async{
     productList.clear();
     //its needed for the refresh button,when we refresh the app,it fetches data including the exiting products.
     _getProductListProgressIndicator = true;

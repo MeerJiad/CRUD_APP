@@ -25,8 +25,7 @@ class Products extends StatelessWidget {
             _safeProductImage(),
             width: 60,
             errorBuilder: (context, error, stackTrace) {
-              return Image.network(
-                  'https://rakanonline.com/wp-content/uploads/2022/08/default-product-image.png');
+              return Image.asset('images/default_product_image.png');
             }, //if user's provided link is invalid or somehow the image can't load then it will be shown.
           ),
         ),
@@ -74,7 +73,7 @@ class Products extends StatelessWidget {
     );
   }
 
-  AlertDialog _buildAlertDialog(BuildContext context, StateSetter setState) {
+  AlertDialog _buildAlertDialog(BuildContext context, StateSetter setState) {                    //We did method Extraction for this 'AlertDialog'
     return AlertDialog(
       title: const Text('Are you sure?'),
       content: const Text('Delete Product?'),
@@ -135,7 +134,7 @@ class Products extends StatelessWidget {
   //Here we defined Edge Case at first,then if theres no problem,we will just return the main one.
   String _safeProductImage() {
     if (product.img?.trim().isEmpty ?? true) {
-      return 'https://rakanonline.com/wp-content/uploads/2022/08/default-product-image.png';
+      return 'https://apollobattery.com.au/wp-content/uploads/2022/08/default-product-image.png';
     } else {
       return product.img!;
     }

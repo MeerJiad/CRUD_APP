@@ -153,6 +153,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                       }
                       return null;
                     },
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                         border: const OutlineInputBorder(
                             borderRadius:
@@ -180,6 +181,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                       }
                       return null;
                     },
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                         border: const OutlineInputBorder(
                             borderRadius:
@@ -207,6 +209,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                       }
                       return null;
                     },
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                         border: const OutlineInputBorder(
                             borderRadius:
@@ -272,8 +275,8 @@ class _EditProductScreenState extends State<EditProductScreen> {
             SnackBar(content: Text('Error!!${response.statusCode}')));
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: const Text('Error!!Check your network connection!')));
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text('Error!!Check your network connection!')));
     }
   }
 
@@ -290,7 +293,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
 
   String _safeProductImage() {
     if (widget.product.img?.trim().isEmpty ?? true) {
-      return 'https://rakanonline.com/wp-content/uploads/2022/08/default-product-image.png';
+      return 'https://apollobattery.com.au/wp-content/uploads/2022/08/default-product-image.png';
     } else {
       return widget.product.img!;
     }
